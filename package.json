@@ -6,7 +6,7 @@
     "url": "git+https://github.com/paulomonteiro1/menu-repository.git"
   },
   "publishConfig": {
-    "@paulomonteiro1:registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "ng": "ng",
@@ -25,6 +25,7 @@
     "@angular/platform-browser": "^14.2.0",
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
+    "@paulomonteiro1/menu-repository": "^0.0.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
@@ -42,8 +43,5 @@
     "karma-jasmine-html-reporter": "~2.0.0",
     "ng-packagr": "^14.2.0",
     "typescript": "~4.7.2"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   }
 }
