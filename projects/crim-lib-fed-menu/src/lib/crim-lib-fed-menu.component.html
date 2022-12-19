@@ -1,0 +1,6 @@
+<div class="{{menuClasses['menuContainerClass']}}">
+  <p *ngFor="let menuItem of menuItens" class="{{menuClasses['menuItemContainerClass']}}">
+    <span class="{{menuClasses['menuItemClass']}}" *ngIf="menuItem['fgVisivel'] === getTipoStatus('VISIVEL')"
+          (click)="routeItem(menuItem)">{{menuItem['label']}}</span>
+  </p>
+</div>

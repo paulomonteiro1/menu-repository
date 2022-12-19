@@ -1,0 +1,41 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "crim-lib-fed-menu": {
+      "projectType": "library",
+      "root": "projects/crim-lib-fed-menu",
+      "sourceRoot": "projects/crim-lib-fed-menu/src",
+      "prefix": "bradesco",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/crim-lib-fed-menu/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/crim-lib-fed-menu/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/crim-lib-fed-menu/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/crim-lib-fed-menu/src/test.ts",
+            "tsConfig": "projects/crim-lib-fed-menu/tsconfig.spec.json",
+            "karmaConfig": "projects/crim-lib-fed-menu/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": false
+  }
+}
