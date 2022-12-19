@@ -1,6 +1,13 @@
 {
   "name": "@paulomonteiro1/menu-repository",
   "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulomonteiro1/menu-repository.git"
+  },
+  "publishConfig": {
+    "@paulomonteiro1:registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
